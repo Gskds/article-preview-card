@@ -1,0 +1,141 @@
+:root {
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+    --clr-grayish-blue: hsl(212, 23%, 69%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
+    
+    --ff-body: ;
+    
+    --fw-regular: 500;
+    --fw-bold: 700;
+    
+    --fs-400: 1rem;
+    --fs-500: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+body {
+    background-color: var(--clr-light-grayish-blue);
+    color: var(--clr-desaturated-dark-blue);
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+}
+
+h2 {
+    color: var(--clr-very-dark-grayish-blue);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+/* Utility */
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (min-width: 50em) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+}
+
+.card__description {
+    padding: 1.5rem;
+    /* position: relative; */
+    
+}
+
+.card__description>*+* {
+    margin-top: 1rem;
+}
+
+.author--info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.author__name {
+    color: var(--clr-very-dark-grayish-blue);
+    font-weight: var(--fw-bold);
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.share-icon {
+    position: relative;
+    z-index: 9999;
+}
+
+.social-links {
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    bottom: 20px;
+    background-color: var(--clr-very-dark-grayish-blue);
+    display: none;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-radius: 0 0 10px 10px;
+    width: 360px;
+    
+}
+
+.social-links.active {
+    display: flex;
+}
+
+.social-links p {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 60em) {
+    .social-links {
+       border-radius: 10px;
+       left: 600px;
+       bottom: 80px;
+       width: 250px;
+       overflow: visible;
+    }
+}
