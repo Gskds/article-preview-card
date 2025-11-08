@@ -5,4 +5,5 @@ const share = document.querySelector(".share-icon")
 share.addEventListener("click", function 
 () {
   socialLinks.classList.toggle('active');
+  share.style.fill = 'white';
 });
