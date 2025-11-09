@@ -64,7 +64,7 @@ body {
 }
 
 .card__description {
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
 }
 
 .card__description>*+* {
@@ -81,6 +81,10 @@ body {
     .card>img {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+    }
+    .card__description {
+        padding-top: 1.5rem;
+        padding-inline: 1.5rem;
     }
     
     .card__description>*+* {
