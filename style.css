@@ -83,7 +83,7 @@ body {
         border-bottom-left-radius: 10px;
     }
     .card__description {
-        margin-top: 1.5rem;
+        padding-top: 1rem;
         padding-inline: 1.5rem;
     }
     
