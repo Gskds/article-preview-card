@@ -4,7 +4,7 @@
     --clr-grayish-blue: hsl(212, 23%, 69%);
     --clr-light-grayish-blue: hsl(210, 46%, 95%);
     
-    --ff-body: ;
+    --ff-body: "Manrope", sans-sarif;
     
     --fw-regular: 500;
     --fw-bold: 700;
@@ -63,6 +63,9 @@ body {
     position: relative;
 }
 
+.card img {
+    object-fit: cover;
+}
 
 .card__description {
     padding: 1.5rem;
