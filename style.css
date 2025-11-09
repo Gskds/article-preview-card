@@ -63,12 +63,8 @@ body {
     position: relative;
 }
 
-.card img {
-    object-fit: cover;
-}
-
 .card__description {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
 }
 
 .card__description>*+* {
