@@ -88,7 +88,7 @@ body {
     }
     
     .card__description>*+* {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
 }
 
