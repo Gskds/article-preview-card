@@ -162,14 +162,27 @@ body {
 @media screen and (min-width: 60em) {
     .social-links {
         border-radius: 10px;
-        left: 659px;
-        bottom: 100px;
-        width: 250px;
+        left: 705px;
+        bottom: 140px;
+        width: 200px;
         padding: 0.85rem 1.5rem;
+        gap: 1rem;
+        box-shadow: 0 5px 10px hsl(0, 0%,60%);
+    }
+    
+    .social-links::before {
+        content: '';
+        position: absolute;
+        border: .75em solid transparent;
+        border-top-color: var(--clr-very-dark-grayish-blue);
+        left: 90px;
+        top: 47px;
     }
     
     .social-links p {
         color: var(--clr-light-grayish-blue);
         font-size: var(--fs-400);
+        letter-spacing: .2em;
+        text-transform: uppercase;
     }
 }
