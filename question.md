@@ -22,7 +22,7 @@
 ```
 but it didn't work.
 
-- I make the overflow property hidden on the card to make the image border round but this makes the social links card half hidden when I tried to position it, since it's positioned relative to the card. what should I do? How can I solve this conflict?
+- I make the overflow property hidden on the card to make the image border round but this hides the social links when I tried to position it, since it's positioned relative to the card. what should I do? How can I solve this conflict?
 This is the code
 ```css
 
