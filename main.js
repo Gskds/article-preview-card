@@ -1,5 +1,5 @@
 const socialLinks = document.querySelector(".social-links");
-const share = document.querySelector(".share")
+const share = document.querySelector(".share-button")
 const shareIcon = document.querySelector(".share-icon")
 
 
